@@ -1,0 +1,25 @@
+div {
+    width: 200px;
+    height: 50px;
+    background-color: #0d58c0;
+    color: white;
+    padding: 20px;
+    margin: 10px 50px 40px 100px;
+    transition: all 0.5s;
+}
+
+div:hover {
+    background-color: #5079b3;
+    color: black;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+div:active {
+    background-color: blue;
+    opacity: 10%;
+}
+
+div:focus {
+    background-color: red;
+}

@@ -1,0 +1,32 @@
+div {
+    
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    box-shadow: 15px 20px 15px black;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.semi-round {
+    border-radius: 25%;
+}
+
+.amarillo {
+    background-color: yellowgreen;
+    color: tomato;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.bold {
+    font-weight: bold;
+}

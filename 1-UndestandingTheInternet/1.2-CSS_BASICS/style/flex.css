@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #56ba5e;
+    padding: 20px;
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 20px;
+}
+
+.navbar a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    width: 100px;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 25px;
+    transition: all 0.4s;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #3f9f47;
+}
+
+.tcontainer {
+    display: flex;
+    width: 100%;
+    height: 1300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.totito {
+    display: grid;
+    width: 700px;
+    height: 700px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 20px;
+}
+
+.totito div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#div1 {
+    grid-column: 1 / 5;
+    
+}
+
+div .red {
+    background-color: red;
+}
+
+#div2 {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+#div3 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
