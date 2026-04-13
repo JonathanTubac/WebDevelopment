@@ -8,58 +8,63 @@
 </head>
 
 <body>
-    <h1>HTML Excercise: table and form</h1>
-    <p>This exercise shows how to structure conten using html, tags for a table and a form. There is no JavaScript or
-        interactivity.</p>
-    <h2>1. Create a table</h2>
-    <table cellspacing="0" cellpadding='8' border='1'>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Stock</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Notebook</td>
-                <td>$12.99</td>
-                <td>In Stock</td>
-            </tr>
-            <tr>
-                <td>Pen set</td>
-                <td>$5.50</td>
-                <td>Low Stock</td>
-            </tr>
-            <tr>
-                <td>Sticky notes</td>
-                <td>$3.45</td>
-                <td>Out of Stock</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>2. Create a form </h2>
-    <form action="/enviar" method="POST">
-        <label for="nombre"> Name: </label>
-        <br>
-        <input type="text" id "nombre" name="nombre" required>
-        <br>
-        <label for="email"> Email:</label>
-        <br>
-        <input type="email">
-        <br>
-        <label for="Reason"> Reason for contact:</label>
-        <br>
-        <select name="Reasonfc:">
-            <option value="rfc">Support</option>
-            <option value="rfc">Chat</option>
-        </select><br>
-        <label for="Reason"> Message:</label>
-        <br>
-        <textarea rows="4"></textarea>
-        <br>
-        <button type="submit">Send Message</button>
-    </form>
+    <main>
+
+
+        <h1>HTML Excercise: table and form</h1>
+        <p>This exercise shows how to structure conten using html, tags for a table and a form. There is no JavaScript
+            or
+            interactivity.</p>
+        <h2>1. Create a table</h2>
+        <table cellspacing="0" cellpadding='8' border='1'>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Notebook</td>
+                    <td>$12.99</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td>Pen set</td>
+                    <td>$5.50</td>
+                    <td>Low Stock</td>
+                </tr>
+                <tr>
+                    <td>Sticky notes</td>
+                    <td>$3.45</td>
+                    <td>Out of Stock</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>2. Create a form </h2>
+        <form action="/enviar" method="POST">
+            <label for="nombre"> Name: </label>
+            <br>
+            <input type="text" id "nombre" name="nombre" required placeholder="Text your Name">
+            <br>
+            <label for="email"> Email:</label>
+            <br>
+            <input type="email" placeholder="Text your E-mail">
+            <br>
+            <label for="Reason"> Reason for contact:</label>
+            <br>
+            <select name="Reasonfc:">
+                <option value="rfc">Support</option>
+                <option value="rfc">Chat</option>
+            </select><br>
+            <label for="Reason"> Message:</label>
+            <br>
+            <textarea rows="4" placeholder="Text here"></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
 </body>
 
 </html>
