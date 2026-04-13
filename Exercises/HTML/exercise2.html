@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <main>
+        <h1>HTML Exercise: Table and Form</h1>
+        <p>This exercise shows how to structure content using HTML tags for a table and a form. There is no JavaScript or interactivity.</p>
+
+        <section>
+            <h2>1. Create a Table</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Notebook</td>
+                        <td>$12.99</td>
+                        <td>In stock</td>
+                    </tr>
+                    <tr>
+                        <td>Pen set</td>
+                        <td>$5.50</td>
+                        <td>Low stock</td>
+                    </tr>
+                    <tr>
+                        <td>Sticky notes</td>
+                        <td>$3.45</td>
+                        <td>Out of stock</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>2. Create a Form</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="reason">Reason for contact:</label><br>
+                    <select id="reason" name="reason">
+                        <option value="question">Question</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Support</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" placeholder="Type your message"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
