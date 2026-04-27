@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSITIONS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav {
+        top: 0;
+        width: 100%;
+        height: 50px;
+        background-color: rgb(68, 138, 54);
+        position: sticky;
+        margin: 0;
+        z-index: 1;
+      }
+
+      .cuadrado {
+        width: 250px;
+        height: 250px;
+        background-color: #000000;
+        color: white;
+        margin: 10px;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px green;
+        display: inline-block;
+      }
+
+      .no-me-importa {
+        position: relative;
+        background-color: rgb(58, 165, 165);
+        z-index: 3;
+      }
+
+      .modal {
+        position: fixed;
+        z-index: 50;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .ad {
+        width: 50%;
+        height: 50vh;
+        background-color: rgb(250, 0, 0);
+      }
+
+      .hide {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+            display: none;
+        }
+
+        .modal {
+            display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="ad">
+        <h1>SOY UN ANUNCIO XD</h1>
+        <button id="cerrar">CERRAR</button>
+      </div>
+    </div>
+    <nav>
+      <button>Boton 1</button>
+      <button>Boton 2</button>
+    </nav>
+    <div class="container">
+      <div class="cuadrado">div 1</div>
+      <div class="cuadrado">div 2</div>
+      <div class="cuadrado">div 3</div>
+      <div class="cuadrado">div 4</div>
+    </div>
+
+    <h1 id="userText">Hola</h1>
+    <input id="buscar" type="text">
+
+    <script>
+        const input = document.querySelector('#buscar')
+        const userInfo = document.querySelector('#userText')
+
+        input.addEventListener('input', (e)=>{
+            userInfo.textContent = e.target.value
+        })
+
+    </script>
+  </body>
+</html>
