@@ -1,43 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Playwrite+NO:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body{
-            background-color: black;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        .name {
-            color: aqua;
-        }
+      html {
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+      }
 
-        #p1 {
-            color: red;
-        }
+      body {
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        background-color: #bd6e6e;
+      }
 
-        p {
-            color: green;
-        }
+      h1 {
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #943636;
+      }
 
-        [hola] {
-            color: yellow;
-        }
+      #h1-2 {
+        font-family: "Bitcount Grid Double";
+      }
 
-        .name {
-            color: blue;
-            background-color: white;
-        }
+      .titulo {
+        font-family: "Playwrite NO";
+        text-decoration: underline;
+        color: #93df7c;
+      }
+
+      [morde="true"] {
+        color: #1b4172;
+      }
+
+      .childs > p {
+        color: #620ee9;
+      }
+
+      .sec-1 p {
+        color: #ffffff;
+      }
+
+      div + p {
+        background-color: #1b4172;
+      }
+
+      
+
+      .actions {
+      }
+
+      .active {
+        background-color: #a02d2d;
+      }
+
+      .btn {
+        font-size: 20px;
+        width: 10rem;
+        border: 2px solid #1b4172;
+        padding: 20px;
+        margin: 0px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin: 20px;
+      }
     </style>
+  </head>
+  <body>
+    <h1>Soy el h1 de la raiz</h1>
+    <h1 id="h1-2" class="titulo">Soy el h1 con id de la raiz</h1>
+    <h1 class="titulo">Soy el h1 con clase de la raiz</h1>
+    <h2 class="titulo">Soy el h2 de la raiz</h2>
 
-    <h1 class="name" style="color: red;">Jonathan</h1>
-    <p class="name">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea sint veniam illum tempore, adipisci, suscipit esse ut ipsum tempora, dolor asperiores perspiciatis velit blanditiis similique at totam pariatur officiis repudiandae!</p>
-    <p id = "p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse distinctio inventore autem est illum, doloribus, alias vel, exercitationem natus consequuntur dicta dolores at. Mollitia, repudiandae itaque nobis harum est eaque!</p>
-    <p hola="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, dicta dolorum? Magni fugit qui expedita cum deserunt, similique a maiores deleniti optio hic laboriosam sit beatae, accusamus quo aspernatur temporibus.</p>
-    <h3>SOY H3</h3>
+    <h3 morde="true">Hola, soy el h3 de morde</h3>
 
-</body>
+    <div class="childs">
+      <p>Hola soy un parrafo dentro de div</p>
+      <p>Hola soy un parrafo dentro de div</p>
+      <section>
+        <p>Hola soy un parrafo dentro de section</p>
+        <p>Hola soy un parrafo dentro de section</p>
+      </section>
+    </div>
+
+    <section class="sec-1">
+      <p>Hola, soy el p dentro de section</p>
+      <p>Hola, soy el p dentro de section</p>
+      <div>
+        <p>Hola, soy el p dentro de section</p>
+        <p>Hola, soy el p dentro de section</p>
+      </div>
+      <p>Hola, soy el hermano del div</p>
+      <p>Hola, soy el segundo hermano del div</p>
+    </section>
+
+    <div class="actions">
+      <button class="btn">Boton 1</button>
+      <button class="btn active">Boton 2</button>
+      <button class="btn">Boton 3</button>
+    </div>
+  </body>
 </html>
