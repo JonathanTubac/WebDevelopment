@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Exercise: Table and Form</h1>
+    <p>Thsi exercise shows how to structure content using HTML tags for a table and a Form. There is no JavaScript or interactive. </p>
+    <h2>1.Create a table</h2>
+    <table border="1" cellspacing = "0" cellpadding = "8">
+     
+        <tbody>
+           <tr>
+             <br><th>Product</th></br>
+            <td>price</td>
+            <td>stock</td>
+        </tr>
+        <tr>
+            <td>Notebook</td>
+            <td>$12.99</td>
+            <td>In Stock</td>
+        </tr>
+        <tr>
+            <td>pen set</td>
+            <td>$5.50</td>
+            <td>Low Stock</td>
+        </tr>
+        <tr>
+            <td>Sticky Notes</td>
+            <td>$3.45</td>
+            <td>Out Of Stock</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>2.Create a Form</h2>
+    <form action="/enviar">
+        <label for="Nombre">
+            Nombre:
+        </label >
+        <br>
+        <input placeholder="Enter your name" type="text" id="Nombre"
+        name="Nombre" required>
+        <br>
+        <label for="Email">
+            Email:
+        </label>
+        <br>
+        <input type="email"
+        placeholder="Enter your email" type ="email" id="Email"
+        name="Email" required >
+        <br>
+        <label for="select">
+            Select:
+        </label><br>
+        <select name="Question" id="select">
+           <option value="">Polnito</option>
+           <option value="">Love</option>
+           <option value="">fe</option>
+        </select>
+        <br>
+        <label for="Message">
+            Message:
+        </label><br>
+
+        <textarea rows="4" placeholder="Enter your Message" name="Message" id="Message"></textarea>
+        <br>
+        <button type="submit">Send Message</button>
+        
+        
+    </form>
+
+</body>
+</html>
