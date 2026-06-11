@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <form action="/enviar">
+      <label for="nombre">Nombre: </label>
+      <input type="text" placeholder="Ingrese su nombre" minlength="2" />
+      <br />
+      <label for="contra">Contraseña: </label>
+      <input type="password" required minlength="8"/>
+      <br />
+      <label for="edad">Edad: </label>
+      <input type="number" disabled />
+      <br />
+      <label for="correo">Correo: </label>
+      <input type="email" />
+      <input type="submit" />
+      <input type="file" />
+      <input type="color" />
+      <input type="date" />
+      <input type="checkbox" />
+      <div>
+        <input type="radio" />
+        <input type="radio" />
+        <input type="radio" />
+      </div>
+
+      <input type="reset" value="Limpiar" />
+      <input type="datetime-local" />
+
+      <textarea name="" id="" rows="4"></textarea>
+      <select name="" id="">
+        <option value="">Uno</option>
+        <option value="">Dos</option>
+      </select>
+    </form>
+  </body>
+</html>
