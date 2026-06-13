@@ -1,0 +1,31 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: rgba(200, 155, 120, 0.8) ;
+}
+
+h1 {
+    font-family: 'Luckiest Guy';
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.1cm;
+    text-decoration: underline;
+    color: rgb(80, 70, 63);;
+    font-style: italic;
+}
+
+p {
+    line-height: 1.5rem;
+    font-family: 'Ole';
+}
+
+#info {
+    background-color: rgb(44, 35, 28);
+    color: white;
+}
+
+#info h2, #info p {
+    text-align: center;
+}

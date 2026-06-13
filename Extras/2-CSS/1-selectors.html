@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(141, 141, 141);
+        }
+
+        h1 {
+            color: rgb(200, 155, 120);
+        }
+
+        .titulo {
+            color: rgb(99, 77, 60);
+            font-size: 48px;
+        }
+
+        #primero {
+            color: rgb(161, 71, 2);
+        }
+
+        .p-agrupado > p {
+            color: white;
+        }
+
+        p[nombre="p-nieto1"] {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola, soy el h1 normal</h1>
+
+    <h1 id="primero">Hola, soy h1 con id</h1>
+
+    <h1 class="titulo">Hola, soy el h1 con clase</h1>
+
+    <div class="p-agrupado">
+        <p>Soy el p dentro del div con clase</p>
+        <p>Soy el p dentro del div con clase</p>
+        <div>
+            <p nombre="p-nieto1">Soy el nieto del div con clase y tengo el atributo nombre</p>
+            <p>Soy el nieto del div con clase</p>
+        </div>
+    </div>
+</body>
+</html>
