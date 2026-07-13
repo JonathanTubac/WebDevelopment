@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .cell {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border: 5px solid black;
+      }
+
+      .table {
+        width: 1000px;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .green {
+        background-color: green;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cell.red {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="table">
+        <div class="cell red">
+          <img
+            src="https://dismargt.com/wp-content/uploads/0017053.png"
+            alt=""
+          />
+          <h2>ZAPATO</h2>
+          <p>$100</p>
+          <div>
+            <button>Comprar</button>
+            <button>Ver</button>
+          </div>
+        </div>
+        <div class="cell green">2</div>
+        <div class="cell blue">3</div>
+      </div>
+    </div>
+  </body>
+</html>
