@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 200, 120, 1);
+    flex-direction: column;
+    padding: 55px;
+}
+
+h1 {
+    font-family: "Montenegrin Gothic One";
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Luckiest Guy";
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.card {
+    width: 30%;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(119, 192, 163);;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0px 0px black;
+    padding: 15px;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    height: 35px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid rgb(0, 95, 57);
+    color: white;
+    transition: all 0.2s;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px;
+}
+
+input:focus {
+    background-color: white;
+    border: 2px solid rgb(0, 95, 57);
+    outline: none;
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.btn {
+    background-color: rgb(157, 255, 216);
+    width: 80%;
+    height: 40px;
+    font-family: "Black Ops One";
+    font-size: 15px;
+}
