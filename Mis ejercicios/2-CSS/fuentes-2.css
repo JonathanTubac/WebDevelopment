@@ -1,0 +1,30 @@
+html {
+    font-size: 20px;
+}
+
+body{
+    background-color: rgb(171, 237, 215);
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+p{
+    line-height: normal;
+}
+
+#primero{
+    background-color: rgb(176, 137, 212);
+    color: beige;
+}
+
+#primero h2 , p{
+    text-align: center;
+}
