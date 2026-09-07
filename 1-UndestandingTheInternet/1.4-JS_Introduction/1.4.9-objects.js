@@ -10,4 +10,5 @@ const persona = {
 const { nombre, edad, genero } = persona;
 
 const persona1 = { ...persona, nombre: "Ana", gmail: "javier@gmail.com" };
+
 console.log(persona1);
